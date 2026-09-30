@@ -1,0 +1,18 @@
+[
+  {
+    "test_id": "SIEMENS-GOLDEN-001",
+    "query": "Which functions need to be updated if I change the logic in the Axis Control Panel for contact operator@siemens.com?",
+    "component_name": "AxisControlPanel",
+    "expected_functions": [
+      "CalculateAxisTorqueLimiter",
+      "TriggerSafetyInterlockBus",
+      "AxisTelemetryWebSocketAdapter"
+    ],
+    "expected_requirements": [
+      "REQ-2008-MOTION-441",
+      "REQ-2004-SIL3-109",
+      "JIRA-MOD-8821",
+      "REQ-2006-HMI-012"
+    ]
+  }
+]
